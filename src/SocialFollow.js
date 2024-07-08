@@ -14,7 +14,7 @@ export default function SocialFollow() {
 
           <div class="social-container">
 
-                <a href="https://github.com/Lavishgurjar85" target="_blank"
+                <a href="https://github.com/Lavishgurjar852" target="_blank"
                     className="Github social ">
                    <FontAwesomeIcon icon={faGithub} size="2x" />
                 </a>
