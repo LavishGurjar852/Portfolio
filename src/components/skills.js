@@ -5,6 +5,7 @@ import ProgressBar from "./progressBar";
 import dispensary from "../image/dispensary.png";
 import ticket from "../image/ticket.png";
 import travel from "../image/travel.png";
+import room from "../image/room.png";
 export default function Skills() {
   const skill1 = "HTML";
   const skill2 = "CSS";
@@ -12,12 +13,14 @@ export default function Skills() {
   const skill4 = "REACT";
   const skill5 = "Nodejs";
   const skill6 = "Mongodb";
+  const skill7 = "Machine_Learning"
   const progressValueHTML = 70;
   const progressValueCSS = 60;
   const progressValueJS = 40;
   const progressValueREACT = 40;
   const progressValueNodejs = 55;
   const progressValueMongodb = 40;
+  const progressValueMachine_Learning=60;
   
   useEffect(() => {
     AOS.init({
@@ -44,6 +47,7 @@ export default function Skills() {
           <ProgressBar value={progressValueREACT} skillName={skill4} />
           <ProgressBar value={progressValueNodejs} skillName={skill5} />
           <ProgressBar value={progressValueMongodb} skillName={skill6} />
+          <ProgressBar value={progressValueMachine_Learning} skillName={skill7} />
         </div>
       </div>
       <hr />
@@ -62,12 +66,28 @@ export default function Skills() {
             </p>
 
             <div className="button">
-              <a className="link"href="https://github.com/Lavishgurjar85/College-Dispensary" target="_blank">
+              <a className="link"href="https://github.com/LavishGurjar852/College-dispensary" target="_blank">
                 View Project
               </a>
             </div>
           </div>
-          <div className="project" data-aos='zoom-in' data-aos-delay="500">
+
+            <div className="project" data-aos='zoom-in' data-aos-delay="500">
+            <img src={room} className="project-img" />
+            <h2 className="project-name">Rent The Room</h2>
+            <p className="project-details">
+              Description: This project allows the user to view rooms around there surrounding for renting.
+              They can search the rooms by address or there budget.
+            </p>
+
+            <div className="button" >
+              <a className="link"href="https://rentmyroom-3h7k.onrender.com" target="_blank">
+                View Project
+              </a>
+            </div>
+          </div>
+  
+          <div className="project" data-aos='zoom-in' data-aos-delay="1000">
             <img src={ticket} className="project-img" />
             <h2 className="project-name">Tickets Available</h2>
             <p className="project-details">
@@ -76,12 +96,12 @@ export default function Skills() {
             </p>
 
             <div className="button" >
-              <a className="link"href="https://github.com/Lavishgurjar85/Train-Ticket-Availability" target="_blank">
+              <a className="link"href="https://github.com/LavishGurjar852/Railway-Seat-Availability" target="_blank">
                 View Project
               </a>
             </div>
           </div>
-          <div className="project" data-aos='zoom-in' data-aos-delay="1000">
+          <div className="project" data-aos='zoom-in' data-aos-delay="1500">
             <img src={travel} className="project-img" />
             <h2 className="project-name">Travel management system</h2>
             <p className="project-details">
@@ -90,7 +110,7 @@ export default function Skills() {
               and there travelling details.
             </p>
             <div className="button">
-              <a className="link" href="https://github.com/Lavishgurjar85/Travel-Management-System" target="_blank">
+              <a className="link" href="https://github.com/LavishGurjar852/Travel-Management" target="_blank">
                 View Project
               </a>
             </div>
